@@ -10,15 +10,14 @@ import java.awt.Color;
 import java.awt.event.*;
 
 import view.components.*;
-import view.screens.coresubjects.AppBarCore;
 import view.screens.coresubjects.SubjectCard;
 
 public class MajorCsds implements ActionListener {
     public JFrame coreListFrame = new JFrame("CSIT core subjects");
-    public AppBarCore appBarCore = new AppBarCore("DS&AI");
+    public AppBar appBarCore = new AppBar("DS&AI", "");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;
-    public SideBarButton closeButton = new SideBarButton("Đóng", 3);
+    public SideBarButton closeButton = new SideBarButton("Đóng");
 
     public MajorCsds() {
         // List of subject names and codes

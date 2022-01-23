@@ -4,21 +4,18 @@ package view.screens.majors;
 
 import javax.swing.*;
 
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
-import java.awt.Color;
+import java.awt.*;
 import java.awt.event.*;
 
 import view.components.*;
-import view.screens.coresubjects.AppBarCore;
 import view.screens.coresubjects.SubjectCard;
 
 public class MajorPbhe implements ActionListener {
     public JFrame coreListFrame = new JFrame("HEAL core subjects");
-    public AppBarCore appBarCore = new AppBarCore("Điều dưỡng");
+    public AppBar appBarCore = new AppBar("Điều dưỡng", "");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;
-    public SideBarButton closeButton = new SideBarButton("Đóng", 3);
+    public SideBarButton closeButton = new SideBarButton("Đóng");
 
     public MajorPbhe() {
         // List of subject names and codes

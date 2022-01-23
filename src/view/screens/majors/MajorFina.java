@@ -4,21 +4,18 @@ package view.screens.majors;
 
 import javax.swing.*;
 
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
-import java.awt.Color;
+import java.awt.*;
 import java.awt.event.*;
 
 import view.components.*;
-import view.screens.coresubjects.AppBarCore;
 import view.screens.coresubjects.SubjectCard;
 
 public class MajorFina implements ActionListener {
     public JFrame coreListFrame = new JFrame("ECON core subjects");
-    public AppBarCore appBarCore = new AppBarCore("Tài chính");
+    public AppBar appBarCore = new AppBar("Tài chính", "");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;
-    public SideBarButton closeButton = new SideBarButton("Đóng", 3);
+    public SideBarButton closeButton = new SideBarButton("Đóng");
 
     public MajorFina() {
         // List of subject names and codes

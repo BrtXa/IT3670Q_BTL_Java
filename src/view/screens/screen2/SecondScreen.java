@@ -12,13 +12,12 @@ import view.screens.heal.HealScreen;
 public class SecondScreen implements ActionListener, MouseListener {
     // Create components
     public JFrame secondScreenFrame = new JFrame("Second Screen");
-    public SideBarButton backButton = new SideBarButton("Quay lại", 3);
-    SideBarScreen2 sideBar = new SideBarScreen2();
-    AppBarScreen2 appBar = new AppBarScreen2();
-    SideBarButton topButton = new SideBarButton("<html>Khoa học máy tính và Công<br?>nghệ thông tin (CSIT)</html>",
-            1);
-    SideBarButton middleButton = new SideBarButton("<html>Kinh tế và tài chính<br/>(ECON)</html>", 2);
-    SideBarButton bottomButton = new SideBarButton("<html>Khoa học sức khỏe<br/>(HEAL)</html>", 3);
+    public SideBarButton backButton = new SideBarButton("Quay lại");
+    SideBar sideBar = new SideBar();
+    AppBar appBar = new AppBar("Quản lý học tập", "Hãy chọn một chuyên ngành bạn muốn học");
+    SideBarButton topButton = new SideBarButton("<html>Khoa học máy tính và Công<br?>nghệ thông tin (CSIT)</html>");
+    SideBarButton middleButton = new SideBarButton("<html>Kinh tế và tài chính<br/>(ECON)</html>");
+    SideBarButton bottomButton = new SideBarButton("<html>Khoa học sức khỏe<br/>(HEAL)</html>");
     Description description = new Description("");
 
     public SecondScreen() {

@@ -6,9 +6,8 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class SideBarButton extends JButton {
-    public int screenIndex;
 
-    public SideBarButton(String buttonLabel, int screenIndex) {
+    public SideBarButton(String buttonLabel) {
         // Customize the button
         super();
         setText(buttonLabel);
@@ -21,20 +20,14 @@ public class SideBarButton extends JButton {
         setBackground(new Color(0, 22, 65));
 
         // Add mouse listener
-        addMouseListener(new SideBarButtonMouseClick(screenIndex));
+        addMouseListener(new SideBarButtonMouseClick());
     }
 
     // Button hovering effects
     private class SideBarButtonMouseClick implements MouseListener {
-        public int screenIndex;
-
-        public SideBarButtonMouseClick(int screenIndex) {
-            this.screenIndex = screenIndex;
-        }
 
         @Override
         public void mouseClicked(MouseEvent e) {
-            System.out.println("Button " + screenIndex + " pressed");
         }
 
         @Override
