@@ -13,10 +13,10 @@ import java.awt.event.*;
 
 public class CoreListCsit implements ActionListener {
     public JFrame coreListFrame = new JFrame("CSIT core subjects");
-    public AppBarCore appBarCore = new AppBarCore("CSIT");
+    public AppBar appBarCore = new AppBar("CSIT", "<html>Các môn bắt buộc</html>");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;
-    public SideBarButton closeButton = new SideBarButton("Đóng", 3);
+    public SideBarButton closeButton = new SideBarButton("Đóng");
 
     public CoreListCsit() {
         // List of subject names and codes

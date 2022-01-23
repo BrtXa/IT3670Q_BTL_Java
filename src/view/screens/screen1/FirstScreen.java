@@ -7,9 +7,12 @@ import view.components.*;
 import view.landing.*;
 
 public class FirstScreen implements ActionListener {
-    // Create the frame of the first screen
+    // Create components for the first screen
     public JFrame firstScreenFrame = new JFrame("First Screen");
-    public SideBarButton backButton = new SideBarButton("Quay lại", 4);
+    public SideBarButton backButton = new SideBarButton("Quay lại");
+    public SideBar sideBar = new SideBar();
+    public AppBar appBar = new AppBar("Thông tin sinh viên", "");
+    public WorkSpaceScreen1 workSpace = new WorkSpaceScreen1();
 
     public FirstScreen() {
         // Setup the frame for first screen
@@ -23,11 +26,6 @@ public class FirstScreen implements ActionListener {
         // The comeback button for switching back to the old screen
         backButton.setBounds(0, 115, 350, 101);
         backButton.addActionListener(this);
-
-        // Creating side bar, app bar and the workspace
-        SideBarScreen1 sideBar = new SideBarScreen1();
-        AppBarScreen1 appBar = new AppBarScreen1();
-        WorkSpaceScreen1 workSpace = new WorkSpaceScreen1();
 
         // Positioning components
         sideBar.setBounds(0, 0, 350, 720);

@@ -16,20 +16,18 @@ import view.screens.screen2.*;
 public class CsitScreen implements ActionListener, MouseListener {
     // Create components
     public JFrame csitFrame = new JFrame("CSIT Major Screen");
-    public SideBarButton backButton = new SideBarButton("Quay lại", 3);
+    SideBar sideBar = new SideBar();
+    AppBar appBar = new AppBar("KHMT&CNTT", "Chọn một module chuyên sâu hoặc 05 môn tự chọn");
+    public SideBarButton backButton = new SideBarButton("Quay lại");
     public SideBarButton coreSubjectsButton = new SideBarButton(
-            "<html>Xem khối kiến<br/>thức nền tảng</html>", 3);
+            "<html>Xem khối kiến<br/>thức nền tảng</html>");
     public SideBarButton majorOneSubjectsButton = new SideBarButton(
-            "<html>Xem module<br/>DS&AI</html>", 3);
+            "<html>Xem module<br/>DS&AI</html>");
     public SideBarButton majorTwoSubjectsButton = new SideBarButton(
-            "<html>Xem module<br/>An ninh mạng</html>", 3);
-    SideBarCsit sideBar = new SideBarCsit();
-    AppBarCsit appBar = new AppBarCsit();
-    SideBarButton majorButton = new SideBarButton("<html>Module chuyên sâu<br/>DS&AI</html>",
-            1);
-    SideBarButton majorButton2 = new SideBarButton("<html>Module chuyên sâu<br/>An ninh mạng</html>",
-            1);
-    SideBarButton electiveButton = new SideBarButton("<html>Danh sách môn<br/>tự chọn</html>", 2);
+            "<html>Xem module<br/>An ninh mạng</html>");
+    SideBarButton majorButton = new SideBarButton("<html>Module chuyên sâu<br/>DS&AI</html>");
+    SideBarButton majorButton2 = new SideBarButton("<html>Module chuyên sâu<br/>An ninh mạng</html>");
+    SideBarButton electiveButton = new SideBarButton("<html>Danh sách môn<br/>tự chọn</html>");
     Description description = new Description("");
 
     public CsitScreen() {

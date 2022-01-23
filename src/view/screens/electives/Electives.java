@@ -10,11 +10,11 @@ import java.awt.event.*;
 
 public class Electives extends JFrame implements ActionListener {
 
-    public AppBarElectives appBar = new AppBarElectives("Danh sách môn tự chọn",
+    public AppBar appBar = new AppBar("Danh sách môn tự chọn",
             "Nhấn để chọn chính xác 05 môn tự chọn ");
-    public SideBarButton backButton = new SideBarButton("Quay lại", 3);
-    public SideBarButton calculateButton = new SideBarButton("Tính học phí", 2);
-    public SideBar sideBar = new SideBar(1);
+    public SideBarButton backButton = new SideBarButton("Quay lại");
+    public SideBarButton calculateButton = new SideBarButton("Tính học phí");
+    public SideBar sideBar = new SideBar();
 
     public void backButtonPress() {
 

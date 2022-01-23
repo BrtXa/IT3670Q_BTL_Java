@@ -13,10 +13,10 @@ import java.awt.event.*;
 
 public class CoreListEcon implements ActionListener {
     public JFrame coreListFrame = new JFrame("ECON core subjects");
-    public AppBarCore appBarCore = new AppBarCore("ECON");
+    public AppBar appBarCore = new AppBar("ECON", "<html>Các môn bắt buộc</html>");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;
-    public SideBarButton closeButton = new SideBarButton("Đóng", 3);
+    public SideBarButton closeButton = new SideBarButton("Đóng");
 
     public CoreListEcon() {
         // List of subject names and codes

@@ -16,19 +16,17 @@ import view.screens.screen2.*;
 public class HealScreen implements ActionListener, MouseListener {
     // Create components
     public JFrame healFrame = new JFrame("Heal Major Screen");
-    public SideBarButton backButton = new SideBarButton("Quay lại", 3);
-    public SideBarButton coreSubjectsButton = new SideBarButton("<html>Xem khối kiến<br/>thức nền tảng</html>", 3);
+    public SideBarButton backButton = new SideBarButton("Quay lại");
+    public SideBarButton coreSubjectsButton = new SideBarButton("<html>Xem khối kiến<br/>thức nền tảng</html>");
     public SideBarButton majorOneSubjectsButton = new SideBarButton(
-            "<html>Xem module<br/>Điều dưỡng</html>", 3);
+            "<html>Xem module<br/>Điều dưỡng</html>");
     public SideBarButton majorTwoSubjectsButton = new SideBarButton(
-            "<html>Xem module<br/>Y tế cộng đồng</html>", 3);
-    SideBarHeal sideBar = new SideBarHeal();
-    AppBarHeal appBar = new AppBarHeal();
-    SideBarButton majorButton = new SideBarButton("<html>Module chuyên sâu<br/>Điều dưỡng</html>",
-            1);
-    SideBarButton majorButton2 = new SideBarButton("<html>Module chuyên sâu<br/>Y tế cộng đồng</html>",
-            1);
-    SideBarButton electiveButton = new SideBarButton("<html>Danh sách môn<br/>tự chọn</html>", 2);
+            "<html>Xem module<br/>Y tế cộng đồng</html>");
+    SideBar sideBar = new SideBar();
+    AppBar appBar = new AppBar("Khoa học sức khỏe", "Chọn một module chuyên sâu hoặc 05 môn tự chọn");
+    SideBarButton majorButton = new SideBarButton("<html>Module chuyên sâu<br/>Điều dưỡng</html>");
+    SideBarButton majorButton2 = new SideBarButton("<html>Module chuyên sâu<br/>Y tế cộng đồng</html>");
+    SideBarButton electiveButton = new SideBarButton("<html>Danh sách môn<br/>tự chọn</html>");
     Description description = new Description("");
 
     public HealScreen() {

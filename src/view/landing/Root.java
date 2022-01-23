@@ -11,11 +11,11 @@ import view.screens.screen3.ThirdScreen;
 public class Root implements ActionListener, MouseListener {
     // Creating components
     JFrame root;
-    SideBarButton topButton = new SideBarButton("Cá nhân", 1);
-    SideBarButton middleButton = new SideBarButton("<html>Quản lý<br/>học tập</html>", 2);
-    SideBarButton bottomButton = new SideBarButton("Học phí", 3);
-    AppBarLanding appBarLanding = new AppBarLanding();
-    SideBarLanding sideBarLanding = new SideBarLanding();
+    SideBarButton topButton = new SideBarButton("Cá nhân");
+    SideBarButton middleButton = new SideBarButton("<html>Quản lý<br/>học tập</html>");
+    SideBarButton bottomButton = new SideBarButton("Học phí");
+    AppBar appBarLanding = new AppBar("Trang chủ", "Chọn chương trình đào tạo phù hợp với bạn");
+    SideBar sideBarLanding = new SideBar();
     Description description = new Description("");
 
     public Root() {

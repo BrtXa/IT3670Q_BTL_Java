@@ -11,9 +11,15 @@ import view.components.*;
 import view.landing.*;
 
 public class ThirdScreen implements ActionListener {
-    // Create the frame of the first screen
+    // Create components for the first screen
     public JFrame thirdScreenFrame = new JFrame("Third Screen");
-    public SideBarButton backButton = new SideBarButton("Quay lại", 4);
+    public SideBarButton backButton = new SideBarButton("Quay lại");
+    public SideBar sideBar = new SideBar();
+    public AppBar appBar = new AppBar("Thông tin công nợ học phí", "");
+    public JLabel currentFeeText = new JLabel();
+    public JLabel tuitionFeeText = new JLabel();
+
+    JPanel tuitionFeeContainer = new JPanel();
 
     public ThirdScreen() {
         // Setup the frame for first screen
@@ -28,13 +34,6 @@ public class ThirdScreen implements ActionListener {
         backButton.setBounds(0, 115, 350, 101);
         backButton.addActionListener(this);
 
-        // Creating side bar, app bar and the workspace
-        SideBarScreen3 sideBar = new SideBarScreen3();
-        AppBarScreen3 appBar = new AppBarScreen3();
-        JLabel currentFeeText = new JLabel();
-        JLabel tuitionFeeText = new JLabel();
-
-        JPanel tuitionFeeContainer = new JPanel();
         tuitionFeeContainer.setBackground(Palette.mainRed());
 
         // Set the messages

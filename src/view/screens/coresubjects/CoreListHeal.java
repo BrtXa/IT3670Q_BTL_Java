@@ -13,10 +13,10 @@ import java.awt.event.*;
 
 public class CoreListHeal implements ActionListener {
     public JFrame coreListFrame = new JFrame("ECON core subjects");
-    public AppBarCore appBarCore = new AppBarCore("HEAL");
+    public AppBar appBarCore = new AppBar("HEAL", "<html>Các môn bắt buộc</html>");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;
-    public SideBarButton closeButton = new SideBarButton("Đóng", 3);
+    public SideBarButton closeButton = new SideBarButton("Đóng");
 
     public CoreListHeal() {
         // List of subject names and codes
