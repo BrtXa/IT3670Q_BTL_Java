@@ -20,11 +20,32 @@ public class CoreListCsit implements ActionListener {
 
     public CoreListCsit() {
         // List of subject names and codes
-        String subjectCode[] = { "CSIT110", "CSIT111", "CSIT112", "CSIT113", "CSIT114", "CSIT115", "CSIT116",
-                "CSIT117", "CSIT118", "CSIT119", "CSIT120", "TECH100", "CAP100" };
-        String subjectName[] = { "Nhập môn khoa học máy tính", "Toán kỹ thuật", "Vật lý kỹ thuật",
-                "Nhập môn lập trình", "Cơ sở dữ liệu", "Lập trình và thiết kế hướng đối tượng", "Tương tác người - máy",
-                "Hệ điều hành", "Group Project", "Thiết kế phần mềm", "Cấu trúc dữ liệu và giải thuật",
+        String subjectCode[] = {
+                "CSIT110",
+                "CSIT111",
+                "CSIT112",
+                "CSIT113",
+                "CSIT114",
+                "CSIT115",
+                "CSIT116",
+                "CSIT117",
+                "CSIT118",
+                "CSIT119",
+                "CSIT120",
+                "TECH100",
+                "CAP100" };
+        String subjectName[] = {
+                "Nhập môn khoa học máy tính",
+                "Toán kỹ thuật",
+                "Vật lý kỹ thuật",
+                "Nhập môn lập trình",
+                "Cơ sở dữ liệu",
+                "Lập trình và thiết kế hướng đối tượng",
+                "Tương tác người - máy",
+                "Hệ điều hành",
+                "Group Project",
+                "Thiết kế phần mềm",
+                "Cấu trúc dữ liệu và giải thuật",
                 "Thực tập kỹ thuật",
                 "Đồ án tốt nghiệp" };
 

@@ -15,7 +15,8 @@ public class ThirdScreen implements ActionListener {
     public JFrame thirdScreenFrame = new JFrame("Third Screen");
     public SideBarButton backButton = new SideBarButton("Quay lại");
     public SideBar sideBar = new SideBar();
-    public AppBar appBar = new AppBar("Thông tin công nợ học phí", "");
+    public AppBar appBar = new AppBar("Thông tin công nợ học phí",
+            "Dưới đây là học phí dựa theo lần đăng ký môn gần nhất");
     public JLabel currentFeeText = new JLabel();
     public JLabel tuitionFeeText = new JLabel();
 

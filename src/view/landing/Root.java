@@ -1,8 +1,10 @@
 package view.landing;
 
 import java.awt.event.*;
+
 import javax.swing.*;
 
+import view.authentication.LoginForm;
 import view.components.*;
 import view.screens.screen1.FirstScreen;
 import view.screens.screen2.SecondScreen;
@@ -14,6 +16,7 @@ public class Root implements ActionListener, MouseListener {
     SideBarButton topButton = new SideBarButton("Cá nhân");
     SideBarButton middleButton = new SideBarButton("<html>Quản lý<br/>học tập</html>");
     SideBarButton bottomButton = new SideBarButton("Học phí");
+    SideBarButton logoutButton = new SideBarButton("Đăng xuất");
     AppBar appBarLanding = new AppBar("Trang chủ", "Chọn chương trình đào tạo phù hợp với bạn");
     SideBar sideBarLanding = new SideBar();
     Description description = new Description("");
@@ -32,16 +35,19 @@ public class Root implements ActionListener, MouseListener {
         topButton.setBounds(507, 251, 200, 200);
         middleButton.setBounds(507, 487, 200, 200);
         bottomButton.setBounds(827, 251, 200, 200);
+        logoutButton.setBounds(827, 487, 200, 200);
 
         // Add listener for buttons to change screen
         topButton.addActionListener(this);
         middleButton.addActionListener(this);
         bottomButton.addActionListener(this);
+        logoutButton.addActionListener(this);
 
         // Add hovering information for buttons
         topButton.addMouseListener(this);
         middleButton.addMouseListener(this);
         bottomButton.addMouseListener(this);
+        logoutButton.addMouseListener(this);
 
         // Positioning Components
         appBarLanding.setBounds(350, 0, 930, 175);
@@ -54,6 +60,7 @@ public class Root implements ActionListener, MouseListener {
         root.add(topButton);
         root.add(middleButton);
         root.add(bottomButton);
+        root.add(logoutButton);
         root.add(appBarLanding);
         root.add(sideBarLanding);
         sideBarLanding.add(description);
@@ -78,6 +85,10 @@ public class Root implements ActionListener, MouseListener {
             root.dispose();
             ThirdScreen thirdScreen = new ThirdScreen();
             thirdScreen.show();
+        } else if (e.getSource() == logoutButton) {
+            LoginForm loginForm = new LoginForm();
+            loginForm.initialize();
+            root.dispose();
         }
     }
 
@@ -102,6 +113,8 @@ public class Root implements ActionListener, MouseListener {
             description.setText("<html>Xây dựng chương</br> trình học của bạn</html>");
         } else if (e.getSource() == bottomButton) {
             description.setText("<html>Xem thông tin</br> học phí của bạn<html>");
+        } else if (e.getSource() == logoutButton) {
+            description.setText("<html>Đăng xuất<br/>và sử dụng một tài khoản khác<html>");
         }
     }
 
