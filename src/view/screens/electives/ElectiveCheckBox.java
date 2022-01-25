@@ -64,13 +64,11 @@ public class ElectiveCheckBox extends JCheckBox {
                 if (e.getStateChange() == 1) {
                     setBackground(Palette.mainBlue());
                     setForeground(Palette.white());
-                    System.out.println("1 ticked");
                     CheckboxCounter.increment();
                     TuitionFee.addFee(400000);
                 } else {
                     setBackground(Palette.white());
                     setForeground(Palette.mainBlue());
-                    System.out.println("1 unticked");
                     CheckboxCounter.decrement();
                     TuitionFee.subtractFee(400000);
                 }
@@ -78,13 +76,11 @@ public class ElectiveCheckBox extends JCheckBox {
                 if (e.getStateChange() == 1) {
                     setBackground(Palette.mainBlue());
                     setForeground(Palette.white());
-                    System.out.println("2 ticked");
                     CheckboxCounter.increment();
                     TuitionFee.addFee(500000);
                 } else {
                     setBackground(Palette.white());
                     setForeground(Palette.mainBlue());
-                    System.out.println("2 unticked");
                     CheckboxCounter.decrement();
                     TuitionFee.subtractFee(500000);
                 }
@@ -92,13 +88,11 @@ public class ElectiveCheckBox extends JCheckBox {
                 if (e.getStateChange() == 1) {
                     setBackground(Palette.mainBlue());
                     setForeground(Palette.white());
-                    System.out.println("3 ticked");
                     CheckboxCounter.increment();
                     TuitionFee.addFee(800000);
                 } else {
                     setBackground(Palette.white());
                     setForeground(Palette.mainBlue());
-                    System.out.println("3 unticked");
                     CheckboxCounter.decrement();
                     TuitionFee.subtractFee(800000);
                 }

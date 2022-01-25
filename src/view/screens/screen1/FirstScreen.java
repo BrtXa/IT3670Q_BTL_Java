@@ -1,6 +1,7 @@
 package view.screens.screen1;
 
 import javax.swing.*;
+
 import java.awt.event.*;
 
 import view.components.*;
@@ -11,7 +12,7 @@ public class FirstScreen implements ActionListener {
     public JFrame firstScreenFrame = new JFrame("First Screen");
     public SideBarButton backButton = new SideBarButton("Quay lại");
     public SideBar sideBar = new SideBar();
-    public AppBar appBar = new AppBar("Thông tin sinh viên", "");
+    public AppBar appBar = new AppBar("Thông tin sinh viên", "Thông tin cá nhân của bạn được hiển thị ở phía dưới");
     public WorkSpaceScreen1 workSpace = new WorkSpaceScreen1();
 
     public FirstScreen() {

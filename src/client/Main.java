@@ -2,15 +2,15 @@ package client;
 
 import javax.swing.*;
 
-import view.landing.*;
+import view.authentication.LoginForm;
 
 public class Main {
     public static void main(String args[]) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                Root root = new Root();
-                root.show();
+                LoginForm loginForm = new LoginForm();
+                loginForm.initialize();
             }
         });
     }
