@@ -15,7 +15,7 @@ import view.screens.screen2.*;
 
 public class HealScreen implements ActionListener, MouseListener {
     // Create components
-    public JFrame healFrame = new JFrame("Heal Major Screen");
+    public JFrame healFrame = new JFrame("Khối ngành Heal");
     public SideBarButton backButton = new SideBarButton("Quay lại");
     public SideBarButton coreSubjectsButton = new SideBarButton("<html>Xem khối kiến<br/>thức nền tảng</html>");
     public SideBarButton majorOneSubjectsButton = new SideBarButton(

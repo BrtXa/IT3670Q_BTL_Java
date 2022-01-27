@@ -22,7 +22,7 @@ public class Electives extends JFrame implements ActionListener {
 
     public Electives() {
         // Setup the frame for first screen
-        setTitle("Elective choosing screen");
+        setTitle("Danh sách môn tự chọn");
         setLayout(null);
         setBackground(Palette.white());
         setBounds(0, 0, 1300, 760);

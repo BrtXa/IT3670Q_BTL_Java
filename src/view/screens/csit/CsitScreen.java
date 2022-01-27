@@ -15,7 +15,7 @@ import view.screens.screen2.*;
 
 public class CsitScreen implements ActionListener, MouseListener {
     // Create components
-    public JFrame csitFrame = new JFrame("CSIT Major Screen");
+    public JFrame csitFrame = new JFrame("Khối ngành CSIT");
     SideBar sideBar = new SideBar();
     AppBar appBar = new AppBar("KHMT&CNTT", "Chọn một module chuyên sâu hoặc 05 môn tự chọn");
     public SideBarButton backButton = new SideBarButton("Quay lại");

@@ -18,7 +18,7 @@ public class LoginForm extends JFrame implements ActionListener {
     public SideBarButton SignUpButton = new SideBarButton("Đăng ký");
 
     public void initialize() {
-        setTitle("Login demo");
+        setTitle("Màn hinh đăng nhập");
         setLayout(null);
         setBackground(Palette.white());
         setBounds(0, 0, 550, 700);

@@ -13,7 +13,7 @@ import view.components.*;
 import view.screens.coresubjects.SubjectCard;
 
 public class MajorCsds implements ActionListener {
-    public JFrame coreListFrame = new JFrame("CSIT core subjects");
+    public JFrame coreListFrame = new JFrame("Chuyên ngành khoa học dữ liệu và trí tuệ nhân tạo");
     public AppBar appBarCore = new AppBar("DS&AI", "");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;

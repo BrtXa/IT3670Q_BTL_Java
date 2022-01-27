@@ -9,7 +9,7 @@ import view.landing.*;
 
 public class FirstScreen implements ActionListener {
     // Create components for the first screen
-    public JFrame firstScreenFrame = new JFrame("First Screen");
+    public JFrame firstScreenFrame = new JFrame("Cá nhân");
     public SideBarButton backButton = new SideBarButton("Quay lại");
     public SideBar sideBar = new SideBar();
     public AppBar appBar = new AppBar("Thông tin sinh viên", "Thông tin cá nhân của bạn được hiển thị ở phía dưới");
