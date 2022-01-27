@@ -11,7 +11,7 @@ import view.components.*;
 import view.screens.coresubjects.SubjectCard;
 
 public class MajorNurs implements ActionListener {
-    public JFrame coreListFrame = new JFrame("HEAL core subjects");
+    public JFrame coreListFrame = new JFrame("Chuyên ngành điều dưỡng");
     public AppBar appBarCore = new AppBar("Điều dưỡng", "");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;

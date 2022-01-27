@@ -12,7 +12,7 @@ import java.awt.Color;
 import java.awt.event.*;
 
 public class CoreListEcon implements ActionListener {
-    public JFrame coreListFrame = new JFrame("ECON core subjects");
+    public JFrame coreListFrame = new JFrame("Các môn nền tảng ngành ECON");
     public AppBar appBarCore = new AppBar("ECON", "<html>Các môn bắt buộc</html>");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;

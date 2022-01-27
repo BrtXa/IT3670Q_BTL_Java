@@ -13,7 +13,7 @@ import view.components.*;
 import view.screens.coresubjects.SubjectCard;
 
 public class MajorCscs implements ActionListener {
-    public JFrame coreListFrame = new JFrame("CSIT core subjects");
+    public JFrame coreListFrame = new JFrame("Chuyên ngành an ninh mạng");
     public AppBar appBarCore = new AppBar("An ninh mạng", "");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;

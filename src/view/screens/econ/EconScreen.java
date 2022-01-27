@@ -15,7 +15,7 @@ import view.screens.screen2.*;
 
 public class EconScreen implements ActionListener, MouseListener {
     // Create components
-    public JFrame econFrame = new JFrame("Econ Major Screen");
+    public JFrame econFrame = new JFrame("Khối ngành Econ");
     public SideBarButton backButton = new SideBarButton("Quay lại");
     public SideBarButton coreSubjectsButton = new SideBarButton("<html>Xem khối kiến<br/>thức nền tảng</html>");
     public SideBarButton majorOneSubjectsButton = new SideBarButton(

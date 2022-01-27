@@ -11,7 +11,7 @@ import view.components.*;
 import view.screens.coresubjects.SubjectCard;
 
 public class MajorMark implements ActionListener {
-    public JFrame coreListFrame = new JFrame("ECON core subjects");
+    public JFrame coreListFrame = new JFrame("Chuyên ngành Marketing");
     public AppBar appBarCore = new AppBar("Marketing", "");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;

@@ -21,6 +21,7 @@ public class PasswordForm extends JPanel {
         fillArea.setSize(420, 50);
         fillArea.setBackground(Palette.mainBlue());
         fillArea.setForeground(Palette.white());
+        fillArea.setCaretColor(Palette.white());
         fillArea.setFont(new Font("Segoe UI", Font.BOLD, 20));
 
         // Adding title and the fill area

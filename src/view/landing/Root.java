@@ -24,7 +24,7 @@ public class Root implements ActionListener, MouseListener {
     public Root() {
         // This is the application window
         root = new JFrame();
-        root.setTitle("Group 1");
+        root.setTitle("Trang chủ");
         root.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         root.setSize(1300, 760);
         root.setLocationRelativeTo(null);

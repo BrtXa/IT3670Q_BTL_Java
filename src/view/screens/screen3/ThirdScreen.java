@@ -12,7 +12,7 @@ import view.landing.*;
 
 public class ThirdScreen implements ActionListener {
     // Create components for the first screen
-    public JFrame thirdScreenFrame = new JFrame("Third Screen");
+    public JFrame thirdScreenFrame = new JFrame("Học phí");
     public SideBarButton backButton = new SideBarButton("Quay lại");
     public SideBar sideBar = new SideBar();
     public AppBar appBar = new AppBar("Thông tin công nợ học phí",

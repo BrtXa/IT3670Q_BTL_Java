@@ -12,7 +12,7 @@ import java.awt.Color;
 import java.awt.event.*;
 
 public class CoreListHeal implements ActionListener {
-    public JFrame coreListFrame = new JFrame("ECON core subjects");
+    public JFrame coreListFrame = new JFrame("Các môn nền tảng ngành HEAL");
     public AppBar appBarCore = new AppBar("HEAL", "<html>Các môn bắt buộc</html>");
     public JPanel scrollField = new JPanel();
     public JScrollPane scrollPane;

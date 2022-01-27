@@ -11,7 +11,7 @@ import view.screens.heal.HealScreen;
 
 public class SecondScreen implements ActionListener, MouseListener {
     // Create components
-    public JFrame secondScreenFrame = new JFrame("Second Screen");
+    public JFrame secondScreenFrame = new JFrame("Quản lý học tập");
     public SideBarButton backButton = new SideBarButton("Quay lại");
     SideBar sideBar = new SideBar();
     AppBar appBar = new AppBar("Quản lý học tập", "Hãy chọn một chuyên ngành bạn muốn học");
