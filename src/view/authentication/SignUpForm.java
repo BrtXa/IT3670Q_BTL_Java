@@ -50,6 +50,7 @@ public class SignUpForm extends JFrame implements ActionListener {
         String password = passwordField.getText();
         String confirmedPassword = passwordConfirmField.getText();
 
+        // Check for user's inputs, all must be valid
         if (name.isEmpty() || password.isEmpty() || confirmedPassword.isEmpty()) {
             JOptionPane.showMessageDialog(
                     this,
@@ -59,6 +60,8 @@ public class SignUpForm extends JFrame implements ActionListener {
             return;
         }
 
+        // Prompt users to input the password again if the confirmed password is
+        // different from the password
         if (!password.equals(confirmedPassword)) {
             JOptionPane.showMessageDialog(
                     this,
@@ -68,11 +71,11 @@ public class SignUpForm extends JFrame implements ActionListener {
             return;
         }
 
+        // Calling the method to create a new row in the database
         User user = createNewUser(name, password);
 
+        // If there are no error, dispose the sign-up screen and allow user to login
         if (user != null) {
-            // LoginForm loginForm = new LoginForm();
-            // loginForm.initialize();
             dispose();
         } else {
             JOptionPane.showMessageDialog(
@@ -83,6 +86,7 @@ public class SignUpForm extends JFrame implements ActionListener {
         }
     }
 
+    // This is the method to create new row in database
     private User createNewUser(String name, String password) {
         User user = null;
 
@@ -93,11 +97,15 @@ public class SignUpForm extends JFrame implements ActionListener {
         try {
             Connection connection = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
 
+            // Insert to a new row in the database using the information provided through
+            // the textfields
             String sql = "INSERT INTO users (name, password)" + "VALUES (?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, password);
 
+            // If the action is completed successfully, assign the values of the User class
+            // with the provided information
             int addedRow = preparedStatement.executeUpdate();
             if (addedRow > 0) {
                 user = new User();
@@ -105,11 +113,15 @@ public class SignUpForm extends JFrame implements ActionListener {
                 User.password = password;
             }
 
+            // Compare the new data from the User class to check if it exists in the
+            // database
             String fetchCode = "SELECT code FROM users WHERE name=? AND password=?";
             PreparedStatement getCodeStatement = connection.prepareStatement(fetchCode);
             getCodeStatement.setString(1, name);
             getCodeStatement.setString(2, password);
 
+            // If the data exists, illustrates the login code, which is taken from the
+            // database
             ResultSet resultSet = getCodeStatement.executeQuery();
 
             if (resultSet.next()) {
