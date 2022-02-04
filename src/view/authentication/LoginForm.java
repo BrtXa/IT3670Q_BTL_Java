@@ -50,11 +50,12 @@ public class LoginForm extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == loginButton) {
             String mshv = nameField.getText();
-            // String password = String.valueOf(passwordField.getText());
             String password = passwordField.getText();
 
+            // Calling the authentication method
             User user = getUserCredential(mshv, password);
 
+            // If the method return a valid result, login the user
             if (user != null) {
                 Root root = new Root();
                 root.show();
@@ -74,6 +75,7 @@ public class LoginForm extends JFrame implements ActionListener {
 
     }
 
+    // This is the authentication method
     private User getUserCredential(String mshv, String password) {
         User user = null;
 
@@ -84,6 +86,7 @@ public class LoginForm extends JFrame implements ActionListener {
         try {
             Connection connection = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
 
+            // Generating SQL query, this will find the user information
             String sql = "SELECT * FROM users WHERE code=? AND password=?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, mshv);
@@ -91,6 +94,8 @@ public class LoginForm extends JFrame implements ActionListener {
 
             ResultSet resultSet = preparedStatement.executeQuery();
 
+            // If the information provided through the textfields is correct then assign
+            // the user information to the User class
             if (resultSet.next()) {
                 user = new User();
                 User.name = resultSet.getString("name");
